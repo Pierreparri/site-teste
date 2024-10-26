@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stl.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:wght@400;700&display=swap');
+        </style>
+    <title>Pedido Irrecusavel</title>
+</head>
+<body>
+    <div class="box">
+        <p class="p1">FICA CMG? TE FAÇO FELIZ FACIL</p>
+        <div class="button-container">
+            <button>
+                <a id="yes">Sim</a>
+            </button>
+            <button id="no">Não</button>
+        </div>
+    </div>
+    
+    <script>
+        let button = document.getElementById('no')
+        let height = window.innerHeight-50
+        let width = window.innerWidth-50
+
+        button.addEventListener('mouseover', function(){
+            button.style.position='absolute'
+            button.style.top=Math.random()*height+'px'
+            button.style.left=Math.random()*width+'px'
+        })
+
+        const btn = document.getElementById('yes')
+        btn.addEventListener('click', function(){
+            alert('agora avisa ele pq n tem como saber')
+        })
+    </script>
+</body>
+</html>
